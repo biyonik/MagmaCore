@@ -1,0 +1,13 @@
+{
+    "name": "lava/magmacore",
+    "description": "Basit bir PHP Uyguygulama çatısı",
+    "type": "library",
+    "authors": [
+        {
+            "name": "biyonik",
+            "email": "ahmet.altun60@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}
