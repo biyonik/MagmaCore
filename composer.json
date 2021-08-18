@@ -1,13 +1,41 @@
 {
     "name": "lava/magmacore",
-    "description": "Basit bir PHP Uyguygulama çatısı",
+    "description": "Basit bir PHP Uygulama çatısı",
+    "keywords": ["framework", "php", "magmacore"],
     "type": "library",
+    "license": "MIT",
+    "readme": "",
+    "time": "",
+    "support": {
+        "issues": "https://github.com/biyonik/MagmaCore/issues",
+        "source": "https://github.com/biyonik/MagmaCore",
+        "wiki": "https://github.com/biyonik/MagmaCore/wiki"
+    },
     "authors": [
         {
             "name": "biyonik",
-            "email": "ahmet.altun60@gmail.com"
+            "email": "ahmet.altun60@gmail.com",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "alpha",
-    "require": {}
+    "require": {
+        "php": "7.4.12|^8.1",
+        "ext-mbstring": "*",
+        "ext-iconv": "*",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-simplexml": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Magma\\": "src/Magma"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Magma\\Tests\\": "tests/"
+        }
+    }
 }
