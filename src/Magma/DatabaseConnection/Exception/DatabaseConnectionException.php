@@ -7,11 +7,13 @@ use Throwable;
 
 class DatabaseConnectionException extends PDOException
 {
-    protected $message;
-    protected $code;
-    protected Throwable $previous;
 
-    public function __construct($message = "", $code = 0, Throwable $previous = null)
+    /**
+     * @param string $message
+     * @param int $code
+     * @param Throwable|null $previous
+     */
+    public function __construct($message = null, $code = null, Throwable $previous = null)
     {
         $this->message = $message;
         $this->code = $code;
